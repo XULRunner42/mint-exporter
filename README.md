@@ -1,10 +1,13 @@
-# mint-exporter
+mint-exporter
+=============
+
+Building off of toddmazierski's mint-exporter, this is not a fork
 
 Regularly export your Mint.com transactions.
 
 ## Dependencies
 
-  * Ruby > 1.8.7 (tested with 1.8.7-p357 and 1.9.3-p125)
+  * Ruby > 1.8.7 (tested with 1.9.3-p194)
   * [Bundler](http://gembundler.com/)
 
 ## Installation
@@ -17,7 +20,9 @@ $ bundle
 
 ## Usage
 ```
-$ ruby mint-exporter.rb foo@bar.com password > mint-transactions.csv
+$ ruby mint-exporter.rb foo@bar.com password > mint-export.csv
+$ ruby mustache.rb > mustache.out
+$ ./yaml.rb
 ```
 
 ## Note
